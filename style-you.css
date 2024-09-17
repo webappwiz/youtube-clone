@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  height: 100vh;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 80px;
+  height: 100%;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+ 
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+ 
+}
+i{
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+}
+.i{
+    color: black;
+}
+.shorts{
+  width: 30px;
+}
+
+#navtoggle {
+  display: block;
+  cursor: pointer;
+ margin-top: -23%;
+margin-left: 20%;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: black;
+  margin: 5px 0;
+  
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+ margin-left: 3%;
+ 
+  }
+   
+.ngn {
+  font-size: 10px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin-top:-1%;
+ 
+}
+.yout {
+    color: black;
+    letter-spacing: -0.1rem;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+font-size: 20px;
+}
+a{
+  text-decoration: none;
+}
+
+
+.menu-btn:hover {
+  background-color: gray;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+}
+.item:hover {
+  background-color: whitesmoke;
+}
+.item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 6px;
+}
+.item span {
+  font-size: 11px;
+ 
+ 
+}
+
+#menu {
+  width: 240px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 10;
+ overflow-y: scroll;
+  
+}
+#menu.visible {
+  transform: translateX(0);
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.menu-group {
+  padding: 16px 0;
+  border-block: 1px solid rgb(192, 189, 189);
+}
+
+.menu-item {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+.call{
+            padding-left: 25px;
+           
+}
+h1{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.menu-item:hover {
+  background-color: whitesmoke;
+}
+.menu-item img {
+  margin-right: 24px;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  padding: 5px 10px;
+ margin-top: 1%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+ 
+ overflow-y: scroll;
+ background-color: white;
+
+}
+
+ .search-center{
+display: flex;
+flex-direction: row;
+margin-left: 10%;
+width: 50%;
+}
+ #searc {
+  display: flex;
+font-weight: lighter;
+padding-left: 10px;
+}
+
+ form {
+  display: flex;
+ width: 90%;
+ border: 1px solid #ddd;
+ height: 70%;
+ border-radius: 30px;
+}
+#input{
+         height: 100%;
+      width: 90%;
+   border: none;
+}
+#mic{
+       margin-left: 5%;
+       background-color: #ddd;
+      width: 50px;
+      height: 45px;
+      border: 36px;
+      border-radius: 36px;
+      align-items: center;
+      padding: 10px;
+}
+.button {
+  height: 100%;
+  width: 60px;
+  border: none;
+}
+
+.icons-right{
+         margin-left: 15%;
+}
+#lef{
+      margin: 5px 10px;
+      
+}
+#lefy{
+  margin: 5px 10px;
+  font-size: 40px;
+  
+ 
+}
+.log {
+  display: flex;
+  flex-direction: row;
+  }
+  .shorted{
+  width: 30px;
+  height: 30px;
+}
+.video-grid{
+  display: flex;
+  flex-direction: row;
+ height: 50%;
+ width: 100%;
+ 
+}
+.video-item{
+ height: 100%;
+ width: 35%;
+ background-color: white;
+ margin: 0;
+ 
+}
+
+ video{
+  width:100%;
+  height: 75%;
+ margin: 10px 10px;
+  border-radius: 15px;
+ 
+}
+
+.video-info {
+   
+   margin: 0 10px;
+}
+
+.video-info h4 {
+  margin-left: 30px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.video-info p {
+  margin-left: 30px;
+  font-size: 0.9rem;
+  color: #777; 
+}
+.seco{
+  display: flex;
+  flex-direction: row;
+ height: 50%;
+ width: 100%;
+ 
+}

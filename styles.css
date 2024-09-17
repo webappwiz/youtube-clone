@@ -1,0 +1,35 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px; /* Space between videos */
+  padding: 20px; /* Optional: padding around the grid */
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column; /* Stack video and info vertically */
+}
+
+video {
+  width: 100%; /* Full width of the column */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
+.video-info {
+  margin-top: 8px; /* Space between video and text */
+  text-align: left;
+}
+
+.video-info h4 {
+  margin: 0; /* Remove margin from title */
+  font-size: 1rem;
+  color: #333;
+}
+
+.video-info p {
+  margin: 4px 0 0; /* Space between title and views */
+  font-size: 0.9rem;
+  color: #777; /* Light color for views and played time */
+}
